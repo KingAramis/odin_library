@@ -1,0 +1,156 @@
+/********************* Willy Styles *********************/
+
+:root {
+    --primary-background: #EC0B43;
+    --secondary-background: #7AE7C7;
+    --primary-text: #D6FFB7;
+    --secondary-text: #FFF689;
+    --extra-color: #58355E;
+    --celadon: #74D3AE;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right, var(--extra-color) 0%, 
+        var(--secondary-text) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/********************* TITlE *********************/
+
+.header-container {
+    background-color: #58355E40;
+    color: var(--primary-text);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 
+        0px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container p {
+    padding: 1rem;
+    margin: 0px;
+    text-align: center;
+}
+
+.header-container h1 {
+    text-align: center;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #74D3AE60;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3),
+        0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: var(--secondary-background);
+}
+
+/********************* Book grid *********************/
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+        minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 1rem;
+}
+
+.book {
+    background-color: #EC0B4330;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 
+        0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+/********************* BOOK *********************/
+
+.book img {
+    max-width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.book p {
+    margin: 0px 0px 1rem 0px;
+}
+
+/********************* Form Styles *********************/
+
+form {
+    background-color: #58355E;
+    color: #D6FFB7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 
+        0px 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+form div {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: flex-end;
+}
+
+form div label {
+    font-size: 1rem;
+}
+ form div input {
+    background-color: #74D3AE;
+    color: black;
+    font-weight: 700;
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 
+        0px 5px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ form div input:focus {
+    border: none;
+    background-color: #EC0B43;
+ }
+
+ input[type="submit"] {
+    padding: 10px;
+    margin: 0px 2rem 0px 2rem;
+    background-color: #74D3AE;
+    color: #58355E;
+    font-weight: 700;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 
+        0px 5px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ input[type="submit"]:hover {
+    background-color: darkturquoise;
+ }
+
+ 
