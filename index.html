@@ -15,7 +15,7 @@
     </div>
 
     <div>
-        <button>ADD BOOK</button>
+        <button class="add-book-btn">ADD BOOK</button>
     </div>
     
     <div class="book-container">
@@ -25,12 +25,12 @@
             <p>author</p>
             <p>total pages</p>
             <p>have you read it?</p>
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
         </div>
 
     </div>
 
-    <form>
+    <form class="book-form">
         <div>
             <label for="book-name">Book Name:</label>
             <input type="text" id="book-name" name="book-name"><br>
@@ -46,7 +46,7 @@
             <input type="number" id="num-pages" name="num-pages"><br>
         </div>
       
-        <div>
+        <div class="radio-div">
             <label for="read-status">Have you read this book?</label><br>
             <input type="radio" id="read-yes" name="read-status" value="yes">
             <label for="read-yes">Yes</label><br>
@@ -54,9 +54,12 @@
             <label for="read-no">No</label><br>
         </div>
       
-        <input type="submit" value="Submit">
+        <div class="form-btns-div">
+            <button class="close-form-btn">Close</button>
+            <input type="submit" value="Submit">
+        </div>
       </form>
 
-    
+<script src="javascript.js"></script>
 </body>
 </html>
